@@ -68,13 +68,14 @@
 ## Background Circles
 
 - It is a component.
-- Circles bnadie hain hmne 5 different sixes ke tailwindcss use krte we.
+- Circles bnadie hain hmne 5 different sizes ke tailwindcss use krte we.
 - uske ilawa hmne animation effects bhi apply kre hain in circles mein jese animate-ping/animate-pulse ke.
 - animate={{
       scale: [1, 2, 2, 3, 1],
       opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1],
     }}
 - opacity deskte hain hm array mein bhi animation mein to phr animation is trhn se chlegi!
+- scale mein bhi array derhe hain hm to ustrhn se scale krega yh.
 
 ## Image optimization in nextjs
 
@@ -96,6 +97,7 @@
 ### Creating Grid :
 
 - grid grid-cols-4 gap-5 -- css required!
+- grid ke andar 4 coloumns bnado.
 
 ### Hero Icons -- https://heroicons.com/
 
@@ -133,7 +135,7 @@
 - Now we will be looking how to start using sanity!
 - The best part of using the sanity is for the non developers who will get look at this and will change the items on the console and the codebase or the webste will be updated all the way.
 
-- npm install -g @sanity/cli -- install sanity sanity cli in your pc.
+- npm install -g @sanity/cli -- install sanity cli in your pc.
 - sanity init --coupon sonny2022 -- this command to create the sanity from your terminal all the way
 
 - After running the above command we have to do some checks put yes at all
@@ -176,17 +178,15 @@
 - type Data = {
   socials:Socials[]
   }
-- type Socials ={
-
-}
+- type Socials ={}
 
 - This is how we will be defining the types for the data that is actually coming all the way!
 - typings.d.ts -- Creating this type definitions file like this
 - interface se type bnarhe hain take extend bhi hojae
 
-## Nextjs Api -- pages runnig on the backend
+## Nextjs Api -- pages running on the backend
 
-- http://localhost:3000/api/hello -- api chalti hai idhr is page pe
+- http://localhost:3000/api/hello -- api chalti hai idhr is page pe.
 - It is bydefault the api running on the backend in the nextjs here for us all the way.
 - Here we will be creating different requests over here for us that will going to bring the data for us on the server side rendering!
 
@@ -207,7 +207,7 @@
 - A library here that will going to help us to connect the sanity with our nextjs application!
 - After installing we will be creating sanity.ts file -- sanity.ts
 - In sanity.ts we will configure all the stuff in the sanity all the way!
-- After we will set all the environment variables inside the .env.example file that we will going to use here for us all the way. -- .env.example
+- After we will set all the environment variables inside the .env.example file that we will going to use here for us all the way. -- .env.example,.env.local
 
 ## Incremental Static Regeneration
 
@@ -255,7 +255,7 @@
     <title>Wajahat's Portfolio</title>
   </Head>  - It is where the title goes its in each page in nextjs.
 
-- wanted header to be on the top so we will say n css -- sticky,top-0.
+- wanted header to be on the top so we will say in css -- sticky,top-0.
 - max-w-7xl - max width of the div or the component where we apply will be 7xl-1200px - that is default.
 - mx-auto - will appear in center, squeeze from both sides on x-axis and will appear in center.
 - z-20 - it is the z-index that will make it to the top.
@@ -328,7 +328,7 @@
 - color/20 -- slash ke bd jo bhi no. likheinge hm usse opacity target hojaegi hmare pass.
 - scrollbar-thin -- It will make the scrollbar thin
 
-- Creating a footer here as well in the bootom when we will going to click it it will take us to the top of the screen!
+- Creating a footer here as well in the bottom when we will going to click it it will take us to the top of the screen!
 - sticky -- sticky se stick hojaega jese yhn mne bottom-5 pe stick hone ka kaha hai to yhn yh stick hojaega bottom-5 pe
 
 - grayscale hover:grayscale-0 -- animation bnadi hai hmne yh grayscale ki, grayscale hoga by default mtlb gray color jb hover kreinge to phr grayscale-0 hojaega to normal color show hojaega hmein!
